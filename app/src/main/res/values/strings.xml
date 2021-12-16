@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Adam\'s Travel</string>
+    <string name="title">Title</string>
+    <string name="subtitle">SubTitle</string>
+
+    <string name="pemilik">Pemilik</string>
+    <string name="arsitek">Arsitek</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="pembuatan">Pembuatan</string>
+
+    <string name="yang_pemilik">Yang Pemilik</string>
+    <string name="yang_arsitek">Yang Arsitek</string>
+    <string name="yang_lokasi">Yang Lokasinya</string>
+    <string name="yang_pembuat">Yang Pembuatnya</string>
+
+    <string name="location_bro">Location</string>
+    <string name="search_bro">Search</string>
+    <string name="profile_bro">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

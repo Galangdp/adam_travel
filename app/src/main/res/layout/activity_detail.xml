@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rv_foto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gambar_wisata"
+            android:layout_width="411dp"
+            android:layout_height="548dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kotu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_titleee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/title"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gambar_wisata" />
+
+        <TextView
+            android:id="@+id/tv_subtitleee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/subtitle"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titleee" />
+
+        <TextView
+            android:id="@+id/tv_pemilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/pemilik"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitleee" />
+
+        <TextView
+            android:id="@+id/tv_yang_pemilik"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/yang_pemilik"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_pemilik" />
+
+        <TextView
+            android:id="@+id/tv_arsitek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/arsitek"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_pemilik"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitleee" />
+
+        <TextView
+            android:id="@+id/tv_yang_arsitek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/yang_arsitek"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_yang_pemilik"
+            app:layout_constraintTop_toBottomOf="@id/tv_arsitek" />
+
+
+        <TextView
+            android:id="@+id/tv_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/lokasi"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_yang_pemilik" />
+
+        <TextView
+            android:id="@+id/tv_yang_lokasi"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/yang_lokasi"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_lokasi" />
+
+        <TextView
+            android:id="@+id/tv_pembuatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/pembuatan"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_lokasi"
+            app:layout_constraintTop_toBottomOf="@id/tv_yang_arsitek" />
+
+        <TextView
+            android:id="@+id/tv_yang_pembuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/yang_pembuat"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tv_yang_lokasi"
+            app:layout_constraintTop_toBottomOf="@id/tv_pembuatan" />
+
+        <ImageView
+            android:id="@+id/btn_pesen"
+            android:layout_width="329dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/button_pesan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_yang_pembuat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
